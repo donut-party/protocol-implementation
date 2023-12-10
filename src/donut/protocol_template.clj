@@ -1,4 +1,4 @@
-(ns donut.dbeasy
+(ns donut.protocol-template
   (:require
    [clojure.walk :as walk]))
 

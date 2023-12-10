@@ -1,7 +1,7 @@
 (ns donut.ns-protocol
   (:require
    [clojure.set :as set]
-   [donut.dbeasy :as dbe]))
+   [donut.protocol-template :as dbe]))
 
 (defprotocol NSProtocol
   (foo [_]))

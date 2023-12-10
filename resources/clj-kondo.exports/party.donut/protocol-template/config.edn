@@ -1,0 +1,3 @@
+{:hooks
+ {:analyze-call
+  {donut.protocol-template/def-protocol-template donut.protocol-template.hooks/def-protocol-template}}}

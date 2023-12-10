@@ -1,4 +1,4 @@
-(ns donut.dbeasy.hooks
+(ns donut.protocol-template.hooks
   (:require
    [clj-kondo.hooks-api :as api]))
 

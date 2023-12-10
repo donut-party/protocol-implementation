@@ -11,7 +11,7 @@
             [org.corfield.build :as bb])
   (:refer-clojure :exclude [test]))
 
-(def lib 'party.donut/dbeasy)
+(def lib 'party.donut/protocol-template)
 (def version (format "0.0.%s" (b/git-count-revs nil)))
 
 (defn deploy "Deploy the JAR to Clojars"
