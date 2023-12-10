@@ -1,5 +1,5 @@
 (ns build
-  "donut/dbeasy's build script. Builds on https://github.com/seancorfield/honeysql/blob/develop/build.clj
+  "donut/protocol-template's build script. Builds on https://github.com/seancorfield/honeysql/blob/develop/build.clj
 
   Run tests:
   clojure -X:test
