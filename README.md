@@ -1,4 +1,4 @@
-[![Clojars Project](https://img.shields.io/clojars/v/party.donut/protocol-template.svg)](https://clojars.org/party.donut/protocol-template)
+[![Clojars Project](https://img.shields.io/clojars/v/party.donut/protocol-implementation.svg)](https://clojars.org/party.donut/protocol-implementation)
 
 # donut.protocol-implementation
 
@@ -11,7 +11,6 @@ Example where an implementation is defined:
 ``` clojure
 (ns donut.box.identity.identity-store
   (:require
-   [donut.dbeasy.next-jdbc :as dben]
    [donut.protocol-implementation :as dpi]
    [next.jdbc.sql :as jsql]))
    
@@ -27,19 +26,19 @@ Example where an implementation is defined:
 
   (-user-by-email
    [datasource email]
-   (dben/query-one datasource {:select [:*]
+   (donut.dbeasy.next-jdbc/query-one datasource {:select [:*]
                                :from   [:user]
                                :where  [:= :email email]}))
 
   (-user-by-reset-password-token
    [datasource token]
-   (dben/query-one datasource {:select [:*]
+   (donut.dbeasy.next-jdbc/query-one datasource {:select [:*]
                                :from   [:user]
                                :where  [:= :reset-password-token token]}))
 
   (-insert-user!
    [datasource user]
-   (dben/insert! datasource user))
+   (donut.dbeasy.next-jdbc/insert! datasource user))
 
   (-update-user!
    [datasource user]
