@@ -1,1 +1,0 @@
-../../../../../resources/clj-kondo.exports/party.donut/protocol-template/donut/protocol_template/hooks.clj

@@ -1,1 +1,1 @@
-{:config-paths ["party.donut/protocol-template"]}
+{:config-paths ["../resources/clj-kondo.exports/party.donut/protocol-implementation"]}

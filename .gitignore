@@ -1,7 +1,7 @@
 *.DS_Store
 *.jar
 *.log
-.clj-kondo/cache
+.clj-kondo/.cache
 .cpcache
 .dir-locals.el
 .lein-env
