@@ -1,0 +1,3 @@
+{:hooks
+ {:analyze-call
+  {donut.protocol-implementation/def-protocol-implementation donut.protocol-implementation.hooks/def-protocol-implementation}}}
